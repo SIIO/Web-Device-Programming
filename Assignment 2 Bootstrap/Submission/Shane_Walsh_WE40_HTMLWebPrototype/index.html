@@ -1,0 +1,185 @@
+<!--
+* Author: Shane Walsh
+* Assignment: WE4.1 Web App Assignment Bootstrap, Digital Skills Academy
+* Student ID: D15128603
+* Date : 2016/07/23
+* Ref: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+* Ref: http://fontawesome.io/examples/  Used for scrolling button
+* Ref: http://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+* Ref: http://getbootstrap.com/components/#jumbotron
+* Ref: http://www.w3schools.com/jquery/jquery_fade.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Assignment: Web and Device Programming - Home Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/myCustom.css" rel="stylesheet">
+
+    <!-- Custom Fonts and CSS. Used here for 'Scroll to top button' REF: http://fontawesome.io/examples/ -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- CSS Conditionals -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <!-- Navigation REF: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+      <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="container">
+
+            <a class="navbar-brand">WebElevate 4.1</a>
+
+            <button class ="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li class="active"><a><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+
+                  <li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+
+                  <li><a href="about.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+
+                  <li><a href="climate.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Climate</a></li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.facebook.com">Facebook</a></li>
+                            <li><a href="http://www.twitter.com">Twitter</a></li>
+                            <li><a href="http://www.instagram.com">Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://www.retroshare.org">Retroshare</a></li>
+                          </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+
+<!-- Carousel Ref: http://www.w3schools.com/bootstrap/bootstrap_carousel.asp-->
+<div class="container">
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+      <img src="images/shroom.jpg" alt="Boom Shroom">
+        <div class="carousel-caption">
+        Boom Shroom
+       </div>
+      </div>
+
+    <div class="item">
+      <img src="images/Namibia.jpg" alt="Namibia">
+      <div class="carousel-caption">
+        Namibia
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/SunsetIndigo.jpg" alt="Indigo Sky">
+      <div class="carousel-caption">
+        Indigo Sky
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>
+
+<!--Jumbo Tron Ref: http://getbootstrap.com/components/#jumbotron -->
+<div class="container">
+  <div class="jumbotron" align="center">
+        <h1>Mumbo Jumbotron</h1>
+
+        <p class="lead" id="paraFade1">Cupcake ipsum dolor sit. Amet bonbon candy canes soufflé fruitcake lollipop danish icing. Halvah jelly beans I love pie wafer toffee I love soufflé bonbon. Wafer sugar plum jelly beans tiramisu gingerbread. Wafer I love chocolate brownie cookie apple pie. Apple pie tiramisu I love I love I love cheesecake soufflé pastry jelly. Bear claw tart I love powder bonbon pastry tart cake lollipop. Marshmallow I love croissant. Pastry dessert marzipan lemon drops tart.</p>
+        <p id="paraFade2">Jelly cotton candy sweet bear claw. I love pie carrot cake I love toffee caramels I love pie jelly. Sweet roll chocolate wafer I love jelly. Lemon drops I love ice cream dragée cookie bear claw brownie I love marshmallow. Chocolate bar jelly-o I love I love I love donut soufflé tiramisu. Gummi bears sweet tiramisu I love muffin sesame snaps. Gummies lemon drops jelly bear claw.</p>
+        <p id="paraFade3">Gingerbread macaroon cheesecake gummi bears I love cheesecake sesame snaps muffin danish. Icing cookie jujubes. Brownie cheesecake sweet roll dessert I love topping chocolate. Cookie cupcake donut. Chocolate cake I love tart tootsie roll tart I love wafer jelly-o jelly. Chocolate caramels oat cake. Croissant macaroon pie halvah I love jelly. Toffee donut cake gummi bears cotton candy halvah.</p>
+        <!-- Fade out button -->
+        <p><button class="btn btn-lg btn-success">Fade In/Out</button></p>
+  </div>
+</div>
+
+<!-- jQuery Jumbotron Paragraph Fade In/Out REF:http://www.w3schools.com/jquery/jquery_fade.asp -->
+<script>
+$(document).ready(function(){       //Ensure DOM is ready. 
+    $("button").click(function(){
+        $("#paraFade1").fadeToggle(3000);
+        $("#paraFade2").fadeToggle(2000);
+        $("#paraFade3").fadeToggle(1000);
+    });
+});
+</script>
+
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <hr class="small">
+                    <h4><strong>Web Elevate 4.1</strong>
+                    </h4>
+                    <p>Bootstrap Assignment 
+                        <br>Digital Skillls Academy</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:shane.walsh@webelevate.ie">shane.walsh@webelevate.ie</a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery to-top button appears after scrolling: This button is on every page so put in seperate js file -->
+    <script src="js/scroll.js"></script>
+
+  </body>
+</html>

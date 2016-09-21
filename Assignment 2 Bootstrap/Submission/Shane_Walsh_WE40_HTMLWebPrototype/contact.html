@@ -1,0 +1,158 @@
+<!--
+* Author: Shane Walsh
+* Assignment: WE4.1 Web App Assignment Bootstrap, Digital Skills Academy
+* Student ID: D15128603
+* Date : 2016/07/23
+* Ref: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+* Ref: http://fontawesome.io/examples/  Used for scrolling button
+* Ref: http://www.w3schools.com/jquery/jquery_hide_show.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Assignment: Web and Device Programming - Contact Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/myCustom.css" rel="stylesheet">
+
+    <!-- Custom Fonts and CSS. Used here for 'Scroll to top button' REF: http://fontawesome.io/examples/ -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- CSS Conditionals -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   
+    <!-- Navigation REF: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+      <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="container">
+
+            <a class="navbar-brand">WebElevate 4.1</a>
+
+            <button class ="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+
+                  <li class="active"><a><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+
+                  <li><a href="about.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+
+                  <li><a href="climate.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Climate</a></li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.facebook.com">Facebook</a></li>
+                            <li><a href="http://www.twitter.com">Twitter</a></li>
+                            <li><a href="http://www.instagram.com">Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://www.retroshare.org">Retroshare</a></li>
+                          </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+<!-- Comment Box -->
+<div class="container" id="contactbox">
+  <div class="contactstyle">
+    <div class="text-center">
+    <div class="well">
+        <h4>Leave a Message</h4>
+    <div class="input-group">
+        <input type="text" id="userComment" class="form-control input-sm chat-input" placeholder="Write your message here..." />
+      <span class="input-group-btn" onclick="addComment()">     
+            <a href="#" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-comment"></span> Add Comment</a>
+        </span>
+    </div>
+    <hr data-brackets-id="12673">
+    <ul data-brackets-id="12674" id="sortable" class="list-unstyled ui-sortable">
+        <strong class="pull-left primary-font">Aoife</strong>
+        <small class="pull-right text-muted">
+           <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
+        </br>
+        <li class="ui-state-default">Cupcake ipsum dolor sit amet bear claw sweet roll topping. Toffee croissant ice cream pastry biscuit brownie powder. Bear claw sweet chupa chups liquorice muffin wafer pie. Donut donut sweet dragée sweet jelly beans I love candy.
+        Wafer I love pie liquorice jujubes lemon drops soufflé caramels. Macaroon tiramisu gummi bears gummies macaroon icing lemon drops. Sweet roll topping cake gummi bears. </li>
+        </br>
+         <strong class="pull-left primary-font">Joey</strong>
+        <small class="pull-right text-muted">
+           <span class="glyphicon glyphicon-time"></span>21 mins ago</small>
+        </br>
+        <li class="ui-state-default">Wafer candy canes muffin. Chocolate cake jelly I love lemon drops cupcake oat cake toffee gingerbread. Oat cake chocolate cake gummies cheesecake gummi bears candy canes fruitcake tiramisu I love.</li>
+        
+    </ul>
+    <!-- Button to hide comment box and button -->
+     <button class="btn btn-lg btn-success" id="hideButton">HIDE</button>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Script tp hide comment box and button REF:http://www.w3schools.com/jquery/jquery_hide_show.asp -->
+<script>
+$(document).ready(function(){   //Ensure DOM is ready.
+
+$( "button" ).click(function() {
+  $( "#contactbox" ).hide( 1000 );
+  $( "#hideButton" ).hide( 1000 );
+});
+});
+</script>
+
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <hr class="small">
+                    <h4><strong>Web Elevate 4.1</strong>
+                    </h4>
+                    <p>Bootstrap Assignment 
+                        <br>Digital Skillls Academy</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:shane.walsh@webelevate.ie">shane.walsh@webelevate.ie</a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery to-top button appears after scrolling: This button is on every page so put in seperate js file -->
+    <script src="js/scroll.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!--
+* Author: Shane Walsh
+* Assignment: WE4.1 Web App Assignment Bootstrap, Digital Skills Academy
+* Student ID: D15128603
+* Date : 2016/07/23
+* Ref: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+* Ref: http://fontawesome.io/examples/  Used for scrolling button
+* Ref: http://startbootstrap.com/template-overviews/round-about/
+* Ref: http://www.w3schools.com/jquery/jquery_animate.asp
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Assignment: Web and Device Programming - About Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/myCustom.css" rel="stylesheet">
+
+    <!-- Custom Fonts and CSS. Used here for 'Scroll to top button' REF: http://fontawesome.io/examples/ -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  
+    <!-- CSS Conditionals -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+   
+    <!-- Navigation REF: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+      <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="container">
+
+            <a class="navbar-brand">WebElevate 4.1</a>
+
+            <button class ="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+
+                  <li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+
+                  <li class="active"><a><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+
+                  <li><a href="climate.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Climate</a></li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.facebook.com">Facebook</a></li>
+                            <li><a href="http://www.twitter.com">Twitter</a></li>
+                            <li><a href="http://www.instagram.com">Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://www.retroshare.org">Retroshare</a></li>
+                          </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+<!-- About Content REF: http://startbootstrap.com/template-overviews/round-about/ -->
+
+    <div class="container">
+
+        <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">About Us
+                    <small>Meet The Team!</small>
+                </h1>
+                <p>Sugar plum jujubes sugar plum. Biscuit fruitcake sesame snaps donut macaroon fruitcake cake. Apple pie jelly beans chocolate cake brownie jelly. Candy toffee lollipop.</p>
+            </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="container" id="memberImages">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            <div class="col-lg-2 col-sm-3 text-center">
+                <img class="img-circle img-responsive img-center" src="images/ElenorMarsi.jpg" alt="Elenor Marsi PM">
+                <h3>Elenor Marsions
+                    <small>Coder</small>
+                </h3>
+                <p>Chupa chups lemon drops gummi bears chocolate dessert croissant cotton candy lollipop.</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 text-center">
+                <img class="img-circle img-responsive img-center" src="images/GailRivera.jpg" alt="Gail Rivera">
+                <h3>Gail Rivera Soma
+                    <small>Project Manager</small>
+                </h3>
+                <p>Chupa chups lemon drops gummi bears chocolate dessert croissant cotton candy lollipop.</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 text-center">
+                <img class="img-circle img-responsive img-center" src="images/CarolynChapple.jpg" alt="Carolyn Chapple">
+                <h3>Carolyn Chapple
+                    <small>Designer</small>
+                </h3>
+                <p>Chupa chups lemon drops gummi bears chocolate dessert croissant cotton candy lollipop.</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 text-center">
+                <img class="img-circle img-responsive img-center" src="images/NoahAndrews.jpg" alt="Noah Andrews">
+                <h3>Noah Andrews
+                    <small>Marketing</small>
+                </h3>
+                <p>Chupa chups lemon drops gummi bears chocolate dessert croissant cotton candy lollipop.</p>
+            </div>
+        </div>
+</div>
+<section>
+<div class="container">
+  <div align="center">
+        <!-- Button to Animate -->
+        <button class="btn btn-lg btn-success">Animate</button>
+  </div>
+</div>  
+</section>    
+
+
+<!-- jQuery Animation REF:http://www.w3schools.com/jquery/jquery_animate.asp -->
+<script>
+$(document).ready(function(){   //Ensure DOM is ready.
+   
+ $("button").click(function(){
+    var div = $("#memberImages");
+    div.animate({left: '100px'}, "slow");
+    div.animate({fontSize: '3em'}, "slow");
+});
+});
+
+</script>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <hr class="small">
+                    <h4><strong>Web Elevate 4.1</strong>
+                    </h4>
+                    <p>Bootstrap Assignment 
+                        <br>Digital Skillls Academy</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:shane.walsh@webelevate.ie">shane.walsh@webelevate.ie</a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery to-top button appears after scrolling: This button is on every page so put in seperate js file -->
+    <script src="js/scroll.js"></script>
+
+  </body>
+</html>

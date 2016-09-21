@@ -1,0 +1,320 @@
+<!--
+* Author: Shane Walsh
+* Assignment: WE4.1 Web App Assignment Bootstrap, Digital Skills Academy
+* Student ID: D15128603
+* Date : 2016/07/23
+* Ref: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp
+* Ref: http://fontawesome.io/examples/  Used for scrolling button
+* Ref: http://tympanus.net/codrops/2013/01/17/putting-css-clip-to-work-expanding-overlay-effect/
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Bootstrap Assignment: Web and Device Programming - About Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/myCustom.css" rel="stylesheet">
+
+    <!-- Custom Fonts and CSS. Used here for 'Scroll to top button' REF: http://fontawesome.io/examples/ -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+    <!-- Climate CSS REF: http://tympanus.net/codrops/2013/01/17/putting-css-clip-to-work-expanding-overlay-effect/-->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <!-- Climate js Script REF:http://tympanus.net/codrops/2013/01/17/putting-css-clip-to-work-expanding-overlay-effect/ -->
+    <script src="js/modernizr.custom.js"></script>
+  
+    <!-- CSS Conditionals -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Navigation REF: http://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+      <div class="navbar navbar-inverse navbar-static-top">
+      
+        <div class="container">
+
+            <a class="navbar-brand">WebElevate 4.1</a>
+
+            <button class ="navbar-toggle" data-toggle ="collapse" data-target=".navHeaderCollapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+
+                  <li><a href="contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+
+                  <li><a href="about.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+
+                  <li class="active"><a><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Climate</a></li>
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.facebook.com">Facebook</a></li>
+                            <li><a href="http://www.twitter.com">Twitter</a></li>
+                            <li><a href="http://www.instagram.com">Instagram</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="http://www.retroshare.org">Retroshare</a></li>
+                          </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+<!-- Climate REF: http://tympanus.net/codrops/2013/01/17/putting-css-clip-to-work-expanding-overlay-effect/-->
+
+        <div class="main">
+
+                <ul id="rb-grid" class="rb-grid clearfix">
+                    <li class="rb-span-2">
+                        <h3>Lisbon</h3><span class="rb-temp">21°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Lisbon</span><span></span><span>21°C</span></div>
+                                <div><span>Mon</span><span>19°C</span></div>
+                                <div><span>Tue</span><span>19°C</span></div>
+                                <div><span>Wed</span><span>18°C</span></div>
+                                <div><span>Thu</span><span>17°C</span></div>
+                                <div><span>Fri</span><span>19°C</span></div>
+                                <div><span>Sat</span><span>22°C</span></div>
+                                <div><span>Sun</span><span>18°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Paris</h3><span class="rb-temp">11°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Paris</span><span>11°C</span></div>
+                                <div><span>Mon</span><span>12°C</span></div>
+                                <div><span>Tue</span><span>11°C</span></div>
+                                <div><span>Wed</span><span>10°C</span></div>
+                                <div><span>Thu</span><span>9°C</span></div>
+                                <div><span>Fri</span><span>10°C</span></div>
+                                <div><span>Sat</span><span>10°C</span></div>
+                                <div><span>Sun</span><span>12°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Belgrade</h3><span class="rb-temp">15°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Belgrade</span><span>15°C</span></div>
+                                <div><span>Mon</span><span>16°C</span></div>
+                                <div><span>Tue</span><span>17°C</span></div>
+                                <div><span>Wed</span><span>15°C</span></div>
+                                <div><span>Thu</span><span>13°C</span></div>
+                                <div><span>Fri</span><span>10°C</span></div>
+                                <div><span>Sat</span><span>11°C</span></div>
+                                <div><span>Sun</span><span>12°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Moscow</h3><span class="rb-temp">2°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Moscow</span><span>1°C</span></div>
+                                <div><span>Mon</span><span>-1°C</span></div>
+                                <div><span>Tue</span><span>-2°C</span></div>
+                                <div><span>Wed</span><span>-6°C</span></div>
+                                <div><span>Thu</span><span>-4°C</span></div>
+                                <div><span>Fri</span><span>-5°C</span></div>
+                                <div><span>Sat</span><span>-6°C</span></div>
+                                <div><span>Sun</span><span>-8°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>New Delhi</h3><span class="rb-temp">17°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">New Delhi</span><span>17°C</span></div>
+                                <div><span>Mon</span><span>18°C</span></div>
+                                <div><span>Tue</span><span>19°C</span></div>
+                                <div><span>Wed</span><span>16°C</span></div>
+                                <div><span>Thu</span><span>17°C</span></div>
+                                <div><span>Fri</span><span>18°C</span></div>
+                                <div><span>Sat</span><span>17°C</span></div>
+                                <div><span>Sun</span><span>17°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Tel Aviv</h3><span class="rb-temp">23°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Tel Aviv</span><span>22°C</span></div>
+                                <div><span>Mon</span><span>23°C</span></div>
+                                <div><span>Tue</span><span>22°C</span></div>
+                                <div><span>Wed</span><span>22°C</span></div>
+                                <div><span>Thu</span><span>21°C</span></div>
+                                <div><span>Fri</span><span>21°C</span></div>
+                                <div><span>Sat</span><span>21°C</span></div>
+                                <div><span>Sun</span><span>24°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Cairo</h3><span class="rb-temp">21°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Cairo</span><span>21°C</span></div>
+                                <div><span>Mon</span><span>22°C</span></div>
+                                <div><span>Tue</span><span>20°C</span></div>
+                                <div><span>Wed</span><span>21°C</span></div>
+                                <div><span>Thu</span><span>21°C</span></div>
+                                <div><span>Fri</span><span>21°C</span></div>
+                                <div><span>Sat</span><span>22°C</span></div>
+                                <div><span>Sun</span><span>23°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>New York</h3><span class="rb-temp">3°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">New York</span><span>3°C</span></div>
+                                <div><span>Mon</span><span>3°C</span></div>
+                                <div><span>Tue</span><span>-1°C</span></div>
+                                <div><span>Wed</span><span>-2°C</span></div>
+                                <div><span>Thu</span><span>1°C</span></div>
+                                <div><span>Fri</span><span>0°C</span></div>
+                                <div><span>Sat</span><span>2°C</span></div>
+                                <div><span>Sun</span><span>3°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rb-span-2">
+                        <h3>San Francisco</h3><span class="rb-temp">15°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">San Francisco</span><span>15°C</span></div>
+                                <div><span>Mon</span><span>16°C</span></div>
+                                <div><span>Tue</span><span>14°C</span></div>
+                                <div><span>Wed</span><span>13°C</span></div>
+                                <div><span>Thu</span><span>15°C</span></div>
+                                <div><span>Fri</span><span>15°C</span></div>
+                                <div><span>Sat</span><span>16°C</span></div>
+                                <div><span>Sun</span><span>15°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Tokyo</h3><span class="rb-temp">8°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Tokyo</span><span>8°C</span></div>
+                                <div><span>Mon</span><span>7°C</span></div>
+                                <div><span>Tue</span><span>6°C</span></div>
+                                <div><span>Wed</span><span>8°C</span></div>
+                                <div><span>Thu</span><span>8°C</span></div>
+                                <div><span>Fri</span><span>6°C</span></div>
+                                <div><span>Sat</span><span>5°C</span></div>
+                                <div><span>Sun</span><span>5°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rb-span-4">
+                        <h3>Sydney</h3><span class="rb-temp">25°C</span>
+                        <div class="rb-overlay">
+                            <span class="rb-close">close</span>
+                            <div class="rb-week">
+                                <div><span class="rb-city">Sydney</span><span>28°C</span></div>
+                                <div><span>Mon</span><span>24°C</span></div>
+                                <div><span>Tue</span><span>26°C</span></div>
+                                <div><span>Wed</span><span>27°C</span></div>
+                                <div><span>Thu</span><span>30°C</span></div>
+                                <div><span>Fri</span><span>31°C</span></div>
+                                <div><span>Sat</span><span>29°C</span></div>
+                                <div><span>Sun</span><span>29°C</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+
+
+        <!-- Climate jQuery REF: http://tympanus.net/codrops/2013/01/17/putting-css-clip-to-work-expanding-overlay-effect/-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/boxgrid.js"></script>
+       
+
+        <script>
+        $(document).ready(function(){   //Ensure DOM is ready.
+            $(function() {
+                Boxgrid.init();
+             });
+        });
+        </script>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <hr class="small">
+                    <h4><strong>Web Elevate 4.1</strong>
+                    </h4>
+                    <p>Bootstrap Assignment 
+                        <br>Digital Skillls Academy</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:shane.walsh@webelevate.ie">shane.walsh@webelevate.ie</a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery to-top button appears after scrolling: This button is on every page so put in seperate js file -->
+    <script src="js/scroll.js"></script>
+
+  </body>
+</html>
